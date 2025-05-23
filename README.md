@@ -1,4 +1,4 @@
-# Calendar Puzzle (odd)
+# Calendar Puzzle
 
 ## English
 
