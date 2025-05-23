@@ -13,11 +13,18 @@ A Python-based puzzle game where the player needs to fit a set of predefined puz
     *   Click on three empty cells on the board to select them as target cells. These cells must remain uncovered.
     *   Press 'S' to attempt to solve the puzzle.
     *   Press 'R' to reset the game.
+    *   ![image](https://github.com/user-attachments/assets/7b391b76-a545-4880-9ebf-9d4fa2ff4863)
+    *   ![image](https://github.com/user-attachments/assets/e70ec987-9200-48f9-b7da-0603f87851eb)
+
+
 
 2.  **Puzzle Piece Visualizer (`visualize_pieces.py`)**:
     *   This script displays all the defined puzzle pieces.
     *   Run the script: `python visualize_pieces.py`
     *   A window will open showing each piece with its index.
+    *   ![image](https://github.com/user-attachments/assets/32633eef-9fcc-4e65-a21b-323e2296c5c6)
+
+
 
 ### Core Algorithm (in `calendar_puzzle.py`)
 *   **Piece Representation**: Puzzle pieces are defined as a list of (row, column) coordinates relative to their own origin.
@@ -54,11 +61,15 @@ A Python-based puzzle game where the player needs to fit a set of predefined puz
     *   在棋盘上点击三个空格单元格，将它们选为目标单元格。这些单元格必须保持未被覆盖。
     *   按 'S' 键尝试解决谜题。
     *   按 'R' 键重置游戏。
+    *   ![image](https://github.com/user-attachments/assets/7b391b76-a545-4880-9ebf-9d4fa2ff4863)
+    *   ![image](https://github.com/user-attachments/assets/e70ec987-9200-48f9-b7da-0603f87851eb)
 
 2.  **拼图块可视化工具 (`visualize_pieces.py`)**:
     *   此脚本会显示所有已定义的拼图块。
     *   运行脚本: `python visualize_pieces.py`
     *   将打开一个窗口，显示每个拼图块及其索引。
+    *   ![image](https://github.com/user-attachments/assets/32633eef-9fcc-4e65-a21b-323e2296c5c6)
+
 
 ### 核心算法 (位于 `calendar_puzzle.py`)
 *   **拼图块表示**: 拼图块被定义为其自身原点相关的 (行, 列) 坐标列表。
