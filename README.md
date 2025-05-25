@@ -54,7 +54,7 @@ python visualize_pieces.py
 ### Puzzle Pieces
 The puzzle includes 10 different pieces:
 
-![Puzzle Pieces](assets/puzzle_pieces.png)
+![Puzzle Pieces](assets/Puzzle_Pieces.png)
 *All available puzzle pieces displayed in the visualization tool*
 This will display all puzzle pieces in a window, arranged automatically based on available space.
 
@@ -85,7 +85,7 @@ The 8x7 board is organized as follows:
 - Rows 6-7: Weekdays (Sun-Sat)
 
 #### Game Interface
-![Game Interface](assets/game_interface.png)
+![Game Interface](assets/Puzzle_Offset.png)
 *The main game interface showing the calendar board with month, date, and weekday labels*
 
 
@@ -98,7 +98,7 @@ The solver uses a backtracking algorithm with the following features:
 - Preserves target cells
 
 #### Solution Example
-![Solution Example](assets/solution_example.png)
+![Solution Example](assets/Puzzle_Solved.png)
 *A solved puzzle with pieces placed to cover all cells except the three target cells*
 
 ## License
