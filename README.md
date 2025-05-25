@@ -54,16 +54,15 @@ python visualize_pieces.py
 ### Puzzle Pieces
 The puzzle includes 10 different pieces:
 
-![Puzzle Pieces](assets/Puzzle_Pieces.png)
+![Puzzle Pieces](./assets/Puzzle_Pieces.PNG)
 *All available puzzle pieces displayed in the visualization tool*
-This will display all puzzle pieces in a window, arranged automatically based on available space.
 
 ## Puzzle Rules
 
 1. The board is divided into three types of cells:
-   - Months (first two rows)
-   - Dates (rows 2-6)
-   - Weekdays (last two rows)
+   - Months
+   - Dates
+   - Weekdays
 
 2. You must select exactly three target cells:
    - One month cell
@@ -80,12 +79,12 @@ This will display all puzzle pieces in a window, arranged automatically based on
 ### Board Layout
 
 The 8x7 board is organized as follows:
-- Rows 0-1: Months (Jan-Dec)
-- Rows 2-6: Dates (1-31)
-- Rows 6-7: Weekdays (Sun-Sat)
+- Rows 1-2: Months (Jan-Dec)
+- Rows 3-7: Dates (1-31)
+- Rows 7-8: Weekdays (Sun-Sat)
 
 #### Game Interface
-![Game Interface](assets/Puzzle_Offset.png)
+![Game Interface](./assets/Puzzle_Offset.PNG)
 *The main game interface showing the calendar board with month, date, and weekday labels*
 
 
@@ -98,7 +97,7 @@ The solver uses a backtracking algorithm with the following features:
 - Preserves target cells
 
 #### Solution Example
-![Solution Example](assets/Puzzle_Solved.png)
+![Solution Example](./assets/Puzzle_Solved.PNG)
 *A solved puzzle with pieces placed to cover all cells except the three target cells*
 
 ## License
