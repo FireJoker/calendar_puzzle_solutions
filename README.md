@@ -1,104 +1,94 @@
 # Calendar Puzzle Solver
 
-A Python implementation of a calendar puzzle solver using Pygame for visualization.
+[English](README.md) | [中文](README_CN.md)
+
+A calendar-themed puzzle solver built with Python and Pygame, featuring interactive gameplay and automatic solving.
 
 ## Overview
 
-This project implements a puzzle solver for a calendar-based puzzle game. The puzzle consists of:
-- An 8x7 board representing a calendar layout
-- 10 different puzzle pieces
-- 3 target cells that must remain uncovered
+- 8×7 board layout with Month, Date, and Day-of-Week labels  
+- 10 unique puzzle pieces  
+- 3 target cells to remain uncovered (one each: Month, Date, Weekday)
 
 ## Features
 
-- Interactive puzzle board with month, date, and weekday labels
-- Automatic selection of current date cells
-- Visual representation of puzzle pieces
-- Solver that finds a solution using backtracking
-- Support for restricted areas where pieces cannot be placed
+- Interactive GUI with visual puzzle display  
+- Auto-select current date, or manually pick target cells  
+- Backtracking algorithm with rotation, flipping, and multi-solution support  
+- Soft color scheme for better visual experience
 
-## Requirements
+## Requirements & Installation
+
+### Requirements
 
 - Python 3.x
-- Pygame
 
-## Installation
+### Install dependencies
 
-1. Clone the repository
-2. Install the required packages:
 ```bash
 pip install pygame
 ```
 
-## Usage
+## How to Use
 
-### Main Game
-
-Run the main puzzle game:
+### Run the main game
 ```bash
 python calendar_puzzle.py
 ```
 
-Controls:
-- Left click: Select/unselect target cells
-- 'R' key: Reset the game
-- 'S' key: Solve the puzzle
+![Game Interface](./assets/Puzzle_Offset.PNG)
+*The main game interface showing the calendar board with month, date, and weekday labels*
 
-### Puzzle Piece Visualization
-
-To view all available puzzle pieces:
+### Visualize puzzle pieces
 ```bash
 python visualize_pieces.py
 ```
 
-### Puzzle Pieces
-The puzzle includes 10 different pieces:
-
 ![Puzzle Pieces](./assets/Puzzle_Pieces.PNG)
 *All available puzzle pieces displayed in the visualization tool*
 
-## Puzzle Rules
+
+### Controls
+
+1. Selecting Target Cells: Left-click to select one Month, one Date, and one Weekday cell.
+
+2. Game Controls:
+   - 'S': Solve the puzzle (requires three target cells selected)
+   - 'N': Show next solution (available after solving)
+   - 'P': Show previous solution (available after solving)
+   - 'R': Reset the game (only available after solving)
+
+
+## Game Rules
 
 1. The board is divided into three types of cells:
-   - Months
-   - Dates
-   - Weekdays
+   - Months (Jan-Dec)
+   - Dates (1-31)
+   - Weekdays (Sun-Sat)
 
-2. You must select exactly three target cells:
-   - One month cell
-   - One date cell
-   - One weekday cell
-
-3. The solver will then try to place all puzzle pieces on the board while:
-   - Covering all cells except the three target cells
-   - Not placing pieces in restricted areas
-   - Not overlapping pieces
-
-## Implementation Details
-
-### Board Layout
-
-The 8x7 board is organized as follows:
-- Rows 1-2: Months (Jan-Dec)
-- Rows 3-7: Dates (1-31)
-- Rows 7-8: Weekdays (Sun-Sat)
-
-#### Game Interface
-![Game Interface](./assets/Puzzle_Offset.PNG)
-*The main game interface showing the calendar board with month, date, and weekday labels*
+2. After selecting 3 target cells, the solver must:
+   - Cover all other cells with puzzle pieces
+   - Avoid overlaps and board boundaries
+   - Respect restricted zones
 
 
-### Solver Algorithm
+## Solver Algorithm
 
-The solver uses a backtracking algorithm with the following features:
-- Tries all possible rotations and flips of each piece
-- Maintains restricted areas
-- Prunes invalid states early
-- Preserves target cells
+- Backtracking with pruning
+- Supports piece rotation and flipping
+- Skips invalid states, preserves target cells
 
 #### Solution Example
 ![Solution Example](./assets/Puzzle_Solved.PNG)
 *A solved puzzle with pieces placed to cover all cells except the three target cells*
+
+## Color Scheme
+
+- Background: Light blue
+- Puzzle pieces: Soft tones (blue, green, orange, purple, etc.)
+- Target cells: Gray
+- Restricted areas: Same as background (invisible)
+- Text: Black and dark gray
 
 ## License
 
